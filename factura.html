@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Factura</title>
+    <script src="./javascript/funciones.js"></script>
+</head>
+<body>
+    <label for="cantidad">Cantidad</label>
+    <input type="number" id="cantidad" onkeyup="calcularTotal()"/>
+    <label for="">Articulo</label>
+    <select name="producto" id="producto" onchange="establecerPrecio()">
+        <option value="1">Maiz</option>
+        <option value="2">Frijol</option>
+        <option value="3">Maicillo</option>
+        <option value="4">Trigo</option>
+        <option value="5">Arroz</option>
+    </select>
+    <label for="">Precio Venta</label>
+    <input type="number" name="pv" id="pv" readonly>
+    <label for="">Total</label>
+    <input readonly type="number" name="total" id="total">
+    <label for="">IVA</label>
+    <input type="number" name="" id="iva" readonly>
+</body>
+</html>
